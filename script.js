@@ -16,6 +16,7 @@ function getPokemon(e) {
   fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
     .then((res) => res.json())
     .then((data) => {
+      console.log(data);
       document.querySelector(".pokemonBox").innerHTML = `
       <div>
           <img
@@ -26,6 +27,8 @@ function getPokemon(e) {
         <div class="pokemonInfo">
           <h1>${capFirstLetter(data.name)}</h1>
           <p>Weight: ${data.weight}</p>
+          <p>Primary Type: ${data.types[0].type.name.toUpperCase()}</p>
+          <p>Base Attack: ${data.stats[1].base_stat}</p>
         </div>
       `;
     })
