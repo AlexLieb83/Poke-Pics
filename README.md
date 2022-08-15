@@ -1,6 +1,6 @@
 # Poke-Pics
 
-A web app to see Pokemon. Go to the link below, type in the name of your favorite (or least favorite) Pokemon and see them and some stats about them!
+A web app to see Pokemon. Go to the link below, type in the name of your favorite (or least favorite) Pokemon to see them and some stats about them!
 
 <strong>Live Demo:</strong> https://pokemonpics.netlify.app/
 
